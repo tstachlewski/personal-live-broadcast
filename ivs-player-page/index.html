@@ -1,0 +1,38 @@
+<html>
+<head>
+
+  <style>
+  .container {
+    margin: auto;
+    width: 800px;
+    padding: 10px;
+  }
+  h1 {text-align: center;}
+  </style>
+
+  <body style="background-color:#CD3C3C;">
+  <meta charset=utf-8/>
+  <title>My Broadcast</title>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>My Personal Live Broadcast - IVS Player</h1>
+
+    <script src="https://player.live-video.net/1.0.0/amazon-ivs-player.min.js"></script>
+    <video id="video-player" width="800" controls playsinline></video>
+    <script>
+      if (IVSPlayer.isPlayerSupported) {
+        const player = IVSPlayer.create();
+        player.attachHTMLVideoElement(document.getElementById('video-player'));
+        player.load('https://REPLACE_ME.m3u8');
+        player.play();
+      }
+    </script>
+
+  </div>
+
+</body>
+</html>

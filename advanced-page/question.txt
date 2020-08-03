@@ -1,0 +1,8 @@
+aws ivs put-metadata \
+    --channel-arn REPLACE_ME \
+    --metadata '{"question": "Which of those is AWS Service","answers": [ "Beta", "Lambda", "Gamma", "Zeta"],"correctIndex": 1}'
+
+
+aws ivs put-metadata \
+  --channel-arn REPLACE_ME \
+  --metadata '{"question": "Which is Poland winter capital","answers": [ "Lodz", "Warsaw", "Gdansk", "Zakopane"],"correctIndex": 3}'
